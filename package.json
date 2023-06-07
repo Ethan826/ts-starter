@@ -4,15 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest ./src"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "fp-ts": "^2.16.0",
+    "fp-ts-contrib": "^0.1.29",
     "io-ts": "^2.2.20",
     "io-ts-reporters": "^2.0.1",
+    "io-ts-types": "^0.5.19",
     "monocle-ts": "^2.3.13",
     "newtype-ts": "^0.3.5"
   },

@@ -4,12 +4,18 @@ dependencies:
   fp-ts:
     specifier: ^2.16.0
     version: 2.16.0
+  fp-ts-contrib:
+    specifier: ^0.1.29
+    version: 0.1.29(fp-ts@2.16.0)
   io-ts:
     specifier: ^2.2.20
     version: 2.2.20(fp-ts@2.16.0)
   io-ts-reporters:
     specifier: ^2.0.1
     version: 2.0.1(fp-ts@2.16.0)(io-ts@2.2.20)
+  io-ts-types:
+    specifier: ^0.5.19
+    version: 0.5.19(fp-ts@2.16.0)(io-ts@2.2.20)(monocle-ts@2.3.13)(newtype-ts@0.3.5)
   monocle-ts:
     specifier: ^2.3.13
     version: 2.3.13(fp-ts@2.16.0)
@@ -1927,6 +1933,14 @@ packages:
       is-callable: 1.2.7
     dev: true
 
+  /fp-ts-contrib@0.1.29(fp-ts@2.16.0):
+    resolution: {integrity: sha512-y+f+xlZqYgj2t+Alu/oat10UC491PByvH7XrT0ITc/DbDJK7LDJLShZJy2orjE7PlcJkO5niDenc1A/woyeB/Q==}
+    peerDependencies:
+      fp-ts: ^2.1.2
+    dependencies:
+      fp-ts: 2.16.0
+    dev: false
+
   /fp-ts@2.16.0:
     resolution: {integrity: sha512-bLq+KgbiXdTEoT1zcARrWEpa5z6A/8b7PcDW7Gef3NSisQ+VS7ll2Xbf1E+xsgik0rWub/8u0qP/iTTjj+PhxQ==}
 
@@ -2180,6 +2194,20 @@ packages:
       '@scarf/scarf': 1.1.1
       fp-ts: 2.16.0
       io-ts: 2.2.20(fp-ts@2.16.0)
+    dev: false
+
+  /io-ts-types@0.5.19(fp-ts@2.16.0)(io-ts@2.2.20)(monocle-ts@2.3.13)(newtype-ts@0.3.5):
+    resolution: {integrity: sha512-kQOYYDZG5vKre+INIDZbLeDJe+oM+4zLpUkjXyTMyUfoCpjJNyi29ZLkuEAwcPufaYo3yu/BsemZtbdD+NtRfQ==}
+    peerDependencies:
+      fp-ts: ^2.0.0
+      io-ts: ^2.0.0
+      monocle-ts: ^2.0.0
+      newtype-ts: ^0.3.2
+    dependencies:
+      fp-ts: 2.16.0
+      io-ts: 2.2.20(fp-ts@2.16.0)
+      monocle-ts: 2.3.13(fp-ts@2.16.0)
+      newtype-ts: 0.3.5(fp-ts@2.16.0)(monocle-ts@2.3.13)
     dev: false
 
   /io-ts@2.2.20(fp-ts@2.16.0):
